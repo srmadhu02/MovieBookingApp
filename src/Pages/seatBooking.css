@@ -1,0 +1,138 @@
+.seat {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+    color:#333333;
+    background-color: white; 
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .seat.selected:not(.booked) {
+    background-color: #11d127;
+    color: white;
+  }
+  
+  .seat.booked {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .selection-summary {
+    margin-top: 20px;
+  }
+  
+  .confirmation-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.9), 0px -4px 8px rgba(0, 0, 0, 0.1), 4px 0px 8px rgba(0, 0, 0, 0.1), -4px 0px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 1240px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .confirmation-content {
+    background-color: white;
+    width: 500px;
+    height: 340px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    color: #4d4b4b;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(0, 0, 0, 0.1), 4px 0px 8px rgba(0, 0, 0, 0.1), -4px 0px 8px rgba(0, 0, 0, 0.1);
+    font-family:  Arial, Helvetica, sans-serif, serif;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #4d4b4b;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #f84464;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 170px;
+  }
+  
+  .submit-button[disabled] {
+    background-color: #fa647f;
+    color: #333333;
+    margin-left: 170px;
+  }
+
+  .payment {
+    margin-top: 10px;
+  }
+
+  .payment button {
+    width: 100px;
+    height: 40px;
+    margin: 10px 50px;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pay-button {
+    background-color: #f84464;
+    font-weight: 530;
+    color: white;
+    border-radius:4px;
+  }
+  
+  
+  .submit-button:hover:not([disabled]) {
+    background-color: #f84464;
+  }
+  
+  .details-row {
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+    margin: 5px 0;
+  }
+  
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .row{
+    color:#333333;
+  }
+
+  hr {
+    border: 0.2px solid #929191;
+    margin: 8px 0;
+  }
+  
+  .blocked-seat {
+    width: 46px; /* Adjust according to your grid size */
+    height: 20px; /* Adjust according to your grid size */
+  }

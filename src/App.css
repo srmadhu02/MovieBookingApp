@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.save-setup {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.save-setup:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+
+.seating-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row-label {
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.seat.selected {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.seat.booked {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.confirmation {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
 }
+
+
+.seat {
+  width: 40px;
+  height: 40px;
+
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white; 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.seat.selected {
+  background-color: green;
+  color: white;
+}
+
+.seat.booked {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+.selection-summary {
+  margin-top: 20px;
+}
+
+

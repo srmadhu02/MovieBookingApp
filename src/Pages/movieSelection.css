@@ -1,0 +1,48 @@
+.movie-selection {
+    text-align: center;
+    padding: 20px;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+  
+  .movie-selection h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .movie-card {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto;
+    height:250px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .movie-details {
+    padding: 10px;
+  }
+  
+  .movie-name {
+    color: #333333;
+    font-size: 1.2em;
+  }
+  
+  .movie-language {
+    color: #8a8a8a;
+    font-size: 0.9em;
+  }
+  

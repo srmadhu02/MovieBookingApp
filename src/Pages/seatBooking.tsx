@@ -149,10 +149,6 @@ const SeatBooking: React.FC<SeatBookingProps> = ({ movie }) => {
     if (savedBlockedSeats) {
       setBlockedSeats(JSON.parse(savedBlockedSeats));
     }
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
   }, []);
 
   return (
